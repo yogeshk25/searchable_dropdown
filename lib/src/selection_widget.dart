@@ -205,6 +205,7 @@ class _SelectionWidgetState<T> extends State<SelectionWidget<T>> {
                             widget.scrollbarProps?.notificationPredicate,
                         interactive: widget.scrollbarProps?.interactive,
                         child: ListView.builder(
+                          controller: widget.scrollbarProps?.controller,
                           shrinkWrap: true,
                           padding: EdgeInsets.symmetric(vertical: 0),
                           itemCount: snapshot.data!.length,
